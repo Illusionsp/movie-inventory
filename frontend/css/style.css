@@ -44,6 +44,7 @@ header {
     background-color: var(--glass-heavy); 
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
+    color: #b20710;
 }
 
 .header-container {
@@ -105,6 +106,8 @@ header {
     max-width: 650px;
     margin-bottom: 30px;
     text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    margin-left: 120px;
+    font-weight: 900;
 }
 
 .scroll-down-btn {
