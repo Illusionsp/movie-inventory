@@ -101,11 +101,13 @@ header {
 }
 
 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--text-muted);
     max-width: 650px;
     margin-bottom: 30px;
     text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+    margin-left: 120px;
+    font-weight: bold;
 }
 
 .scroll-down-btn {
