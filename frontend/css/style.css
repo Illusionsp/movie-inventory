@@ -135,65 +135,76 @@ header {
     scroll-snap-align: start;
 }
 
-.search-and-filter {
-    background-color: var(--glass-medium);
-    border-right: 1px solid var(--border-color);
-    padding: 30px;
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
-    gap: 25px;
-    position: sticky;
-    top: 80px; 
-    height: calc(100vh - 80px);
-    overflow-y: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.search-and-filter label { 
-    font-size: 0.85rem; 
-    text-transform: uppercase; 
-    color: var(--text-muted); 
-    font-weight: bold; 
+.footer-brand {
+    flex: 1;
+    min-width: 250px;
 }
 
-.search-and-filter input[type="text"], .search-and-filter select {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid #555;
-    color: var(--text-main);
-    padding: 12px;
-    border-radius: 4px;
+.footer-brand p:first-child {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-links table {
     width: 100%;
+    border-collapse: collapse;
 }
 
-input[type=range] { width: 100%; accent-color: var(--primary-color); }
-
-.main-container {
-    padding: 40px;
+.footer-links th {
+    text-align: left;
+    padding-bottom: 1rem;
+    color: var(--accent-color);
+    font-size: 1.1rem;
 }
 
-.list-title h3 { font-size: 1.5rem; margin-bottom: 20px; }
-
-.movie-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.footer-links td {
+    padding: 0.5rem 0;
+    color: #cccccc;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
-#footer {
-    background-color: var(--glass-heavy);
-    border-top: 1px solid var(--border-color);
-    padding: 30px;
-    scroll-snap-align: end;
+.footer-links td:hover {
+    color: white;
+    padding-left: 5px;
 }
 
 @media (max-width: 768px) {
-    #content-section {
-        grid-template-columns: 1fr;
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
-    .search-and-filter {
-        position: static;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--border-color);
+    
+    .footer-links table {
+        text-align: center;
     }
-    .hero-text h2 { font-size: 2rem; }
+    
+    .footer-links th,
+    .footer-links td {
+        text-align: center;
+    }
 }
