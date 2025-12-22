@@ -9,24 +9,7 @@
 </head>
 <body>
 
-    <header id="header">
-        <div class="header-container" style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px;">
-            <div class="brand-logo">
-                <h1 style="color: var(--primary-color); margin: 0; text-transform: uppercase;">MovieHub</h1>
-            </div>
-            
-            <ul class="nav-items" style="display: flex; gap: 20px; list-style: none; align-items: center;">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#content-section">Browse</a></li> <li class="nav-item"><a href="#">My List</a></li>
-                
-                <li class="nav-item">
-                    <button id="theme-btn" style="background:transparent; border:1px solid var(--text-main); color:var(--text-main); padding: 5px 15px; border-radius: 20px; cursor: pointer; transition: 0.3s;">
-                        ☀ Day Mode
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <header id="header"></header>
 
     <section class="hero-section">
         <div class="hero-text">
@@ -75,22 +58,19 @@
             <div class="list-title">
                 <h3>Dive into the world of cinema — your next favorite movie is just a click away!</h3>
             </div>
-            <!-- -->
-            <section class="movie-list" id="movie-list">
             
-            <section class="movie-detail-card " style="display: none;">  </section>
+            <section class="movie-list" id="movie-list">
+                <section class="movie-detail-card " style="display: none;">  </section>
             </section>
         </main>
         
     </div>
 
-    <footer id="footer" style="padding: 20px; text-align: center; color: var(--text-muted);">
-        <p>&copy; 2025 MovieHub. All rights reserved.</p>
-    </footer>
+    <footer id="footer"></footer>
 
     <script src="js/include.js" type="module"></script>
     <script src="js/home.js" type="module"></script>
-    <script src="js/theme.js"></script>
+    <script src="js/theme.js" type="module"></script>
     <script src="js/movies.js" type="module"></script>
 
 </body>
