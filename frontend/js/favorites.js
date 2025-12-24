@@ -15,7 +15,7 @@ async function initFavoritesPage() {
             <div class="no-favorites">
                 <h3>No favorites yet</h3>
                 <p>Start adding movies from the Home page!</p>
-                <a href="/" class="btn-primary">Browse Movies</a>
+                <a href="../index.html" class="btn-primary">Browse Movies</a>
             </div>
         `;
         return;
