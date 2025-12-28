@@ -1,4 +1,4 @@
-const API_KEY = "3826a953";
+const API_KEY = "13187d86";
 const BASE_URL = "https://www.omdbapi.com/";
 
 export default class Movie {

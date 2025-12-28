@@ -1,8 +1,6 @@
 import { loadHTML } from "./include.js";
 
-import ensureLogin from './ensureLogin.js';
 
-ensureLogin();
 
 let personalizedMovies = []; 
 let filteredMovies = []; 
