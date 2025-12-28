@@ -1,12 +1,8 @@
 import { loadHTML } from "./include.js";
 
+import ensureLogin from './ensureLogin.js';
 
-const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-
-// if (!loggedInUser) {
-//     alert("Please sign in to access Personalized Movies.");
-//     window.location.href = "authentication.html";
-// }
+ensureLogin();
 
 let personalizedMovies = []; 
 let filteredMovies = []; 
