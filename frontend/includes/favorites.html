@@ -10,64 +10,63 @@
 </head>
 <body>
 
-    <div id="header"></div>
+<div id="header"></div>
 
-    <div class="favorites-layout">
+<div class="favorites-layout">
 
-        <aside class="search-and-filter">
-            <label for="search-input">
-                Search
-                <input type="text" id="search-input" placeholder="Search saved movies...">
+    <!-- ===== FILTER SIDEBAR ===== -->
+    <aside class="search-and-filter">
+
+        <label>
+            Search
+            <input type="text" id="favorite-search" placeholder="Search favorites...">
+        </label>
+
+        <div class="filter-drop-down">
+
+            <label>
+                Watch Status
+                <select id="status-filter">
+                    <option value="">All</option>
+                    <option value="planned">Planned</option>
+                    <option value="watching">Watching</option>
+                    <option value="watched">Watched</option>
+                    <option value="dropped">Dropped</option>
+                </select>
             </label>
 
-            <div class="filter-drop-down">
-                <label for="genre">
-                    Genre
-                    <select id="genre">
-                        <option value="">All</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="romance">Romance</option>
-                        <option value="action">Action</option>
-                        <option value="anime">Anime</option>
-                    </select>
-                </label>
+            <label>
+                Year: <span id="year-value">1995</span>
+                <input type="range" id="year-filter" min="1995" max="2025" value="1995">
+            </label>
 
-                <label for="year">
-                    Year Range
-                    <input type="range" id="year" min="1995" max="2025">
-                </label>
+            <label>
+                Rating: <span id="rating-value">0</span>/10
+                <input type="range" id="rating-filter" min="0" max="10" step="0.5" value="0">
+            </label>
 
-                <label for="rating">
-                    Rating
-                    <input type="range" id="rating" min="0" max="10">
-                </label>
-                
-                <div class="checkbox-wrapper">
-                    <label for="filter-enable">Enable filter</label>
-                    <input type="checkbox" id="filter-enable" name="filter-enable">
-                </div>
-            </div>
-        </aside>
+        </div>
+    </aside>
 
-        <main class="main-container">
-            <div class="list-title">
-                <h3>Your Favorites Collection</h3>
-            </div>
+    <!-- ===== MAIN ===== -->
+    <main class="main-container">
 
-            <section class="favorite-list">
-                </section>
+        <div class="list-title">
+            <h3>Your Favorites Collection</h3>
+        </div>
 
-            <section class="movie-detail-card hidden">
-            </section>
-        </main>
+        <section class="favorite-list"></section>
 
-    </div> 
-    <div id="footer"></div>
+        <section class="movie-detail-card hidden"></section>
 
-    <script src="js/theme.js"></script>
-    <script src="js/movies.js" type="module"></script>
-    <script src="js/include.js" type="module"></script>
-    <script src="js/favorites.js" type="module"></script>
-    <script src="js/favorite.js"></script>
+    </main>
+
+</div>
+
+<div id="footer"></div>
+
+<script src="js/include.js" type="module"></script>
+<script src="js/favorites.js" type="module"></script>
+
 </body>
 </html>
