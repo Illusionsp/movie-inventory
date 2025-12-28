@@ -18,20 +18,21 @@
         <label for="status">
             Watch Status
             <select name="status" id="status" required>
-                <option value="planned">Planned</option>
+                <option value="planned" selected>Planned</option>
                 <option value="watching">Watching</option>
                 <option value="watched">Watched</option>
                 <option value="dropped">Dropped</option>
             </select>
         </label>
 
-        <label for="notes">
+        <label for="note">
             Notes
             <textarea
-                id="notes"
+                id="note"
                 name="notes"
                 placeholder="Your thoughts about this movie..."
                 rows="4"
+                maxlength="1024"
             ></textarea>
         </label>
 
@@ -73,9 +74,12 @@
             >
         </label>
 
+
     </fieldset>
 
 </form>
+
+    <button id="savePersonalization"> Save </button>
 
     <div id="footer"></div>
       <script src="../js/include.js" type="module"></script>
