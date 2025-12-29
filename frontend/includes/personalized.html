@@ -14,52 +14,57 @@
 
 <div id="header"></div>
 
-<!-- ===== FILTER SIDEBAR ===== -->
-<aside class="search-and-filter">
-
-    <label>
-        Search
-        <input type="text" id="personal-search" placeholder="Search your movies...">
-    </label>
-
-    <div class="filter-drop-down">
+<!-- ===== WRAPPER DIV WITH LAYOUT CLASS ===== -->
+<div class="personal-layout">  <!-- ADD THIS WRAPPER -->
+    
+    <!-- ===== FILTER SIDEBAR ===== -->
+    <aside class="search-and-filter">
 
         <label>
-            Watch Status
-            <select id="status-filter">
-                <option value="">All</option>
-                <option value="planned">Planned</option>
-                <option value="watching">Watching</option>
-                <option value="watched">Watched</option>
-                <option value="dropped">Dropped</option>
-            </select>
+            Search
+            <input type="text" id="personal-search" placeholder="Search your movies...">
         </label>
 
-        <label>
-            Year: <span id="year-value">1995</span>
-            <input type="range" id="year-filter" min="1995" max="2025" value="1995">
-        </label>
+        <div class="filter-drop-down">
 
-        <label>
-            Rating: <span id="rating-value">0</span>/10
-            <input type="range" id="rating-filter" min="0" max="10" step="0.5" value="0">
-        </label>
+            <label>
+                Watch Status
+                <select id="status-filter">
+                    <option value="">All</option>
+                    <option value="planned">Planned</option>
+                    <option value="watching">Watching</option>
+                    <option value="watched">Watched</option>
+                    <option value="dropped">Dropped</option>
+                </select>
+            </label>
 
-    </div>
-</aside>
+            <label>
+                Year: <span id="year-value">1995</span>
+                <input type="range" id="year-filter" min="1995" max="2025" value="1995">
+            </label>
 
-<!-- ===== MAIN ===== -->
-<main class="main-container">
+            <label>
+                Rating: <span id="rating-value">0</span>/10
+                <input type="range" id="rating-filter" min="0" max="10" step="0.5" value="0">
+            </label>
 
-    <div class="list-title">
-        <h3>Movies shaped by your taste, your ratings, and your journey.</h3>
-    </div>
+        </div>
+    </aside>
 
-    <section class="personalized-list"></section>
+    <!-- ===== MAIN ===== -->
+    <main class="main-container">
 
-    <section class="movie-detail-card hidden"></section>
+        <div class="list-title">
+            <h3>Movies shaped by your taste, your ratings, and your journey.</h3>
+        </div>
 
-</main>
+        <section class="personalized-list"></section>
+
+        <section class="movie-detail-card hidden"></section>
+
+    </main>
+    
+</div>  <!-- CLOSE THE WRAPPER -->
 
 <div id="footer"></div>
 
